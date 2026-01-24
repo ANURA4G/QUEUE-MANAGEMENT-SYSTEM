@@ -1,0 +1,83 @@
+{
+  "now_serving": {
+    "age": 90,
+    "life_certificate_no": "LC003",
+    "name": "Rajamani",
+    "phone": "9871234567",
+    "position": 1,
+    "preferred_date": "2026-01-25",
+    "preferred_time": "09:00",
+    "priority": 0,
+    "proof_guardian_name": "S/o Gopal",
+    "status": "waiting",
+    "verification_mode": "presence"
+  },
+  "queue": [
+    {
+      "age": 90,
+      "life_certificate_no": "LC003",
+      "name": "Rajamani",
+      "phone": "9871234567",
+      "position": 1,
+      "preferred_date": "2026-01-25",
+      "preferred_time": "09:00",
+      "priority": 0,
+      "proof_guardian_name": "S/o Gopal",
+      "status": "waiting",
+      "verification_mode": "presence"
+    },
+    {
+      "age": 82,
+      "life_certificate_no": "LC12345",
+      "name": "Subramaniam",
+      "phone": "9876543210",
+      "position": 2,
+      "preferred_date": "2026-01-25",
+      "preferred_time": "09:30",
+      "priority": 0,
+      "proof_guardian_name": "S/o Ranganathan",
+      "status": "waiting",
+      "verification_mode": "presence"
+    },
+    {
+      "age": 85,
+      "life_certificate_no": "LC002",
+      "name": "Lakshmi",
+      "phone": "9988776655",
+      "position": 3,
+      "preferred_date": "2026-01-25",
+      "preferred_time": "10:00",
+      "priority": 0,
+      "proof_guardian_name": "W/o Venkatesh",
+      "status": "waiting",
+      "verification_mode": "online"
+    },
+    {
+      "age": 65,
+      "life_certificate_no": "LC004",
+      "name": "Ramesh Kumar",
+      "phone": "9123456780",
+      "position": 4,
+      "preferred_date": "2026-01-25",
+      "preferred_time": "09:00",
+      "priority": 1,
+      "proof_guardian_name": "S/o Krishnan",
+      "status": "waiting",
+      "verification_mode": "presence"
+    },
+    {
+      "age": 72,
+      "life_certificate_no": "LC005",
+      "name": "Priya Devi",
+      "phone": "9765432109",
+      "position": 5,
+      "preferred_date": "2026-01-26",
+      "preferred_time": "14:00",
+      "priority": 1,
+      "proof_guardian_name": "W/o Murugan",
+      "status": "waiting",
+      "verification_mode": "online"
+    }
+  ],
+  "queue_length": 5
+}

@@ -1,0 +1,157 @@
+@baseUrl = http://localhost:5000
+
+### API Info
+GET {{baseUrl}}/
+
+###
+### 1. Add person to queue - Priority 0 (age >= 80)
+###
+POST {{baseUrl}}/queue/enqueue
+Content-Type: appl(Priority 0)
+###
+POST {{baseUrl}}/api
+    "life_certificate_no": "LC001",
+    "name": "Subramaniam",
+    "age": 82,
+    "phone": "9876543210",
+    "proof_guardian_name": "S/o Ranganathan",
+    "verification_mode": "presence",
+    "preferred_date": "2026-01-25",
+    "preferred_time": "09:30"
+}
+
+###
+### 2. Add another high priority person
+###
+POST {{baseUrl}}/queue/enqueue
+Content-Type: application/json
+
+{
+    "life_certificate_no": "LC002",
+    "name": "Lakshmi",
+    "age": 85,
+    "phone": "9988776655",
+    "proof_guardian_name": "W/o Venkatesh",
+    "verification_mode": "online",
+    "preferred_date": "2026-01-25",
+    "preferred_time": "10:00"
+}
+
+###
+### 3. Add normal priority person
+###
+POST {{baseUrl}}/queue/enqueue
+Content-Type: application/json
+
+{
+    "life_certificate_no": "LC003",
+    "name": "Ramesh Kumar",
+    "age": 65,
+    "proof_guardian_name": "S/o Krishnan",
+    "verification_mode": "presence"
+}
+
+###
+### 4. Add another normal priority
+###
+POST {{baseUrl}}/queue/enqueue
+Content-Type: application/json
+
+{
+    "life_certificate_no": "LC004",
+    "name": "Priya Devi",
+    "age": 72,
+    "proof_guardian_name": "W/o Murugan",
+    "verification_mode": "online"
+}
+
+###
+### 5. Add another high priority
+###
+POST {{baseUrl}}/queue/enqueue
+Content-Type: application/json
+
+{
+    "life_certificate_no": "LC005",
+    "name": "Rajamani",
+    "age": 90,
+    "proof_guardian_name": "S/o Gopal",
+    "verification_mode": "presence"
+}
+
+###
+### 6. Test duplicate (should fail)
+###
+POST {{baseUrl}}/queue/enqueue
+Content-Type: application/json
+
+{
+    "life_certificate_no": "LC001",
+    "name": "Duplicate Test",
+    "age": 75,
+    "proof_guardian_name": "S/o Test",
+    "verification_mode": "presence"
+}
+
+###
+### 7. Get queue
+###
+GET {{baseUrl}}/queue
+
+###
+### 8. Dequeue first person
+###
+POST {{baseUrl}}/queue/dequeue
+
+###
+### 9. Get queue
+###
+GET {{baseUrl}}/queue
+
+###
+### 10. Dequeue another
+###
+POST {{baseUrl}}/queue/dequeue
+
+###
+### 11. Get queue
+###
+GET {{baseUrl}}/queue
+
+###
+### Test with invalid data
+###
+
+### Missing field
+POST {{baseUrl}}/queue/enqueue
+Content-Type: application/json
+
+{
+    "life_certificate_no": "LC999",
+    "name": "Test Person",
+    "age": 70
+}
+
+### Invalid mode
+POST {{baseUrl}}/queue/enqueue
+Content-Type: application/json
+
+{
+    "life_certificate_no": "LC998",
+    "name": "Test Person",
+    "age": 70,
+    "proof_guardian_name": "S/o Test",
+    "verification_mode": "invalid_mode"
+}
+
+### Invalid age
+POST {{baseUrl}}/queue/enqueue
+Content-Type: application/json
+
+{
+    "life_certificate_no": "LC997",
+    "name": "Test Person",
+    "age": -5,
+    "proof_guardian_name": "S/o Test",
+    "verification_mode": "presence"
+}

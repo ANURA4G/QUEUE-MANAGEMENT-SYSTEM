@@ -1,0 +1,10 @@
+{
+    "life_certificate_no": "LC12345",
+    "name": "Subramaniam",
+    "age": 82,
+    "phone": "9876543210",
+    "proof_guardian_name": "S/o Ranganathan",
+    "verification_mode": "presence",
+    "preferred_date": "2026-01-25",
+    "preferred_time": "09:30"
+}
