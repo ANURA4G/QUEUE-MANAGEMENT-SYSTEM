@@ -60,9 +60,31 @@ def remove_entry(cert_no):
 def get_stats():
     """Get queue statistics"""
     queue_state = queue_manager.get_queue_state()
+    queue_list = queue_state.get('queue', [])
+    
+    # Count by priority
+    priority_0_count = sum(1 for entry in queue_list if entry.get('priority') == 0)
+    priority_1_count = sum(1 for entry in queue_list if entry.get('priority') == 1)
+    
+    # Count by mode
+    presence_count = sum(1 for entry in queue_list if entry.get('verification_mode') == 'presence')
+    online_count = sum(1 for entry in queue_list if entry.get('verification_mode') == 'online')
+    
+    # Calculate average age
+    ages = [entry.get('age', 0) for entry in queue_list]
+    avg_age = sum(ages) / len(ages) if ages else 0
+    
+    # Estimate wait time (5 minutes per person)
+    estimated_wait = queue_state['queue_length'] * 5
     
     stats = {
-        'total_people': queue_state['queue_length'],
+        'total_in_queue': queue_state['queue_length'],
+        'priority_0_count': priority_0_count,
+        'priority_1_count': priority_1_count,
+        'presence_mode_count': presence_count,
+        'online_mode_count': online_count,
+        'average_age': round(avg_age, 1),
+        'estimated_wait_time_minutes': estimated_wait,
         'now_serving': queue_state['now_serving']['life_certificate_no'] if queue_state['now_serving'] else None,
         'last_updated': queue_state['last_updated'],
         'queue_empty': queue_state['queue_length'] == 0

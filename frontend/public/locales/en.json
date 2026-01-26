@@ -1,0 +1,392 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "refresh": "Refresh",
+    "download": "Download",
+    "print": "Print",
+    "yes": "Yes",
+    "no": "No",
+    "confirm": "Confirm",
+    "required": "Required"
+  },
+  "app": {
+    "name": "Life Certificate Queue Management System",
+    "tagline": "Government of India - Digital Service Portal",
+    "department": "Department of Pension & Pensioners Welfare",
+    "ministry": "Ministry of Personnel, Public Grievances and Pensions"
+  },
+  "nav": {
+    "home": "Home",
+    "booking": "Book Appointment",
+    "queueStatus": "Queue Status",
+    "checkStatus": "Check My Status",
+    "admin": "Admin",
+    "about": "About Us",
+    "help": "Help & Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "sitemap": "Sitemap"
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content",
+    "fontSize": "Font Size",
+    "normal": "Normal",
+    "large": "Large",
+    "extraLarge": "Extra Large",
+    "contrast": "Contrast",
+    "highContrast": "High Contrast",
+    "language": "Language",
+    "english": "English",
+    "hindi": "हिंदी"
+  },
+  "home": {
+    "hero": {
+      "title": "Life Certificate Verification Made Simple",
+      "subtitle": "Book your appointment online and avoid long queues. Fast, secure, and accessible service for all pensioners.",
+      "bookNow": "Book Appointment",
+      "checkStatus": "Check Queue Status"
+    },
+    "stats": {
+      "title": "Live Queue Statistics",
+      "totalInQueue": "People in Queue",
+      "avgWaitTime": "Average Wait Time",
+      "servedToday": "Served Today",
+      "minutes": "minutes"
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Book Online",
+        "description": "Fill the simple form with your details and choose your preferred date and time."
+      },
+      "step2": {
+        "title": "Get Confirmation",
+        "description": "Receive instant confirmation with your queue position and estimated wait time."
+      },
+      "step3": {
+        "title": "Visit or Connect",
+        "description": "Visit the office or connect online at your scheduled time for verification."
+      },
+      "step4": {
+        "title": "Certificate Verified",
+        "description": "Your life certificate is verified and updated in the system instantly."
+      }
+    },
+    "features": {
+      "title": "Why Choose Our Service",
+      "priority": {
+        "title": "Priority for Senior Citizens",
+        "description": "Citizens aged 80 and above receive priority queue placement."
+      },
+      "online": {
+        "title": "Online Verification",
+        "description": "Verify from home through secure video call. No need to travel."
+      },
+      "realtime": {
+        "title": "Real-time Updates",
+        "description": "Track your queue position and estimated wait time in real-time."
+      },
+      "accessible": {
+        "title": "Fully Accessible",
+        "description": "Designed for everyone with support for screen readers and multiple languages."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "What documents do I need?",
+        "answer": "You need your Life Certificate Number, valid ID proof, and a guardian/nominee present for verification."
+      },
+      "q2": {
+        "question": "How long does verification take?",
+        "answer": "The verification process typically takes 10-15 minutes once your turn arrives."
+      },
+      "q3": {
+        "question": "Can I reschedule my appointment?",
+        "answer": "Yes, you can reschedule or cancel your appointment up to 24 hours before the scheduled time."
+      },
+      "q4": {
+        "question": "Is online verification available for everyone?",
+        "answer": "Yes, online verification via video call is available for all pensioners with a stable internet connection."
+      },
+      "q5": {
+        "question": "What are the office timings?",
+        "answer": "The office is open Monday to Friday, 9:00 AM to 5:00 PM, excluding public holidays."
+      }
+    }
+  },
+  "booking": {
+    "title": "Book Your Appointment",
+    "subtitle": "Fill in the details below to schedule your life certificate verification",
+    "draftRecovered": "We found a saved draft. Would you like to restore it?",
+    "restore": "Restore Draft",
+    "discard": "Start Fresh",
+    "form": {
+      "certificateNo": "Life Certificate Number",
+      "certificateNoPlaceholder": "Enter your certificate number",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name as per records",
+      "age": "Age",
+      "agePlaceholder": "Enter your age",
+      "phone": "Phone Number",
+      "phonePlaceholder": "10-digit mobile number",
+      "guardianName": "Guardian/Nominee Name",
+      "guardianNamePlaceholder": "Name of attending guardian or nominee",
+      "verificationMode": "Verification Mode",
+      "presence": "In-Person Visit",
+      "online": "Online Video Call",
+      "preferredDate": "Preferred Date",
+      "preferredTime": "Preferred Time",
+      "submit": "Book Appointment",
+      "submitting": "Booking..."
+    },
+    "validation": {
+      "certificateRequired": "Certificate number is required",
+      "certificateMin": "Certificate number must be at least 5 characters",
+      "nameRequired": "Name is required",
+      "nameMin": "Name must be at least 2 characters",
+      "ageRequired": "Age is required",
+      "ageRange": "Age must be between 0 and 150",
+      "phoneRequired": "Phone number is required",
+      "phoneDigits": "Phone number must be exactly 10 digits",
+      "guardianRequired": "Guardian/Nominee name is required",
+      "modeRequired": "Please select a verification mode",
+      "dateRequired": "Please select a date",
+      "dateFuture": "Date cannot be in the past",
+      "timeRequired": "Please select a time"
+    },
+    "success": {
+      "title": "Appointment Booked Successfully!",
+      "position": "Your Queue Position",
+      "priority": "Priority Level",
+      "waitTime": "Estimated Wait Time",
+      "details": "Appointment Details",
+      "downloadSlip": "Download Appointment Slip",
+      "printSlip": "Print Slip",
+      "bookAnother": "Book Another Appointment",
+      "checkStatus": "Check Queue Status"
+    }
+  },
+  "queue": {
+    "title": "Queue Status",
+    "subtitle": "View real-time queue information",
+    "nowServing": "Now Serving",
+    "noOneServing": "Queue is empty",
+    "position": "Position",
+    "name": "Name",
+    "certificate": "Certificate No.",
+    "mode": "Mode",
+    "waitTime": "Est. Wait",
+    "status": "Status",
+    "priority": "Priority",
+    "filters": {
+      "all": "All",
+      "priority0": "Senior Priority",
+      "priority1": "General",
+      "presence": "In-Person",
+      "online": "Online",
+      "search": "Search by name or certificate..."
+    },
+    "stats": {
+      "total": "Total in Queue",
+      "priority0": "Senior Priority",
+      "priority1": "General Queue",
+      "avgWait": "Avg. Wait Time"
+    },
+    "lastUpdated": "Last updated",
+    "autoRefresh": "Auto-refresh every 30 seconds",
+    "empty": "The queue is currently empty",
+    "loading": "Loading queue data..."
+  },
+  "checkStatus": {
+    "title": "Check Your Status",
+    "subtitle": "Enter your certificate number to see your queue position",
+    "placeholder": "Enter Life Certificate Number",
+    "search": "Check Status",
+    "searching": "Searching...",
+    "result": {
+      "title": "Your Queue Information",
+      "position": "Current Position",
+      "peopleAhead": "People Ahead",
+      "waitTime": "Estimated Wait Time",
+      "appointmentDetails": "Appointment Details",
+      "name": "Name",
+      "certificate": "Certificate No.",
+      "mode": "Verification Mode",
+      "date": "Scheduled Date",
+      "time": "Scheduled Time",
+      "priority": "Priority",
+      "qrCode": "QR Code",
+      "qrHint": "Show this QR code at the verification counter",
+      "cancel": "Cancel Appointment",
+      "reschedule": "Reschedule"
+    },
+    "notFound": {
+      "title": "Entry Not Found",
+      "message": "No appointment found with this certificate number. Please check the number and try again, or book a new appointment."
+    }
+  },
+  "admin": {
+    "login": {
+      "title": "Admin Login",
+      "subtitle": "Enter your credentials to access the admin panel",
+      "username": "Username",
+      "password": "Password",
+      "submit": "Login",
+      "error": "Invalid username or password"
+    },
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "welcome": "Welcome, Admin",
+      "logout": "Logout",
+      "callNext": "Call Next Person",
+      "clearQueue": "Clear Queue",
+      "addManual": "Add Manually",
+      "export": "Export Data",
+      "stats": {
+        "title": "Queue Statistics",
+        "total": "Total in Queue",
+        "priority0": "Senior Priority",
+        "priority1": "General Queue",
+        "presence": "In-Person",
+        "online": "Online",
+        "avgAge": "Average Age"
+      },
+      "queue": {
+        "title": "Queue Management",
+        "remove": "Remove",
+        "process": "Process"
+      },
+      "confirm": {
+        "clearQueue": "Are you sure you want to clear the entire queue? This action cannot be undone.",
+        "remove": "Are you sure you want to remove this entry from the queue?"
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Learn more about our services and mission",
+    "content": "The Life Certificate Queue Management System is an initiative by the Department of Pension & Pensioners Welfare to streamline the life certificate verification process for pensioners across India.",
+    "mission": {
+      "title": "Our Mission",
+      "content": "To provide a seamless, accessible, and efficient life certificate verification experience for all pensioners, with special care for senior citizens."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "A digital-first approach to government services that is inclusive, transparent, and citizen-centric."
+    },
+    "features": {
+      "title": "Key Features",
+      "digital": "Digital-First Approach",
+      "accessible": "Accessible Design",
+      "efficient": "Efficient Processing",
+      "secure": "Secure & Private"
+    }
+  },
+  "help": {
+    "title": "Help & Support",
+    "subtitle": "Get assistance with using our services",
+    "contact": {
+      "title": "Contact Us",
+      "phone": "Toll-Free Number",
+      "email": "Email Support",
+      "hours": "Support Hours"
+    },
+    "guide": {
+      "title": "User Guide",
+      "booking": "How to Book an Appointment",
+      "check": "How to Check Your Status",
+      "online": "Online Verification Guide"
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "support": "Support",
+    "legal": "Legal",
+    "contact": "Contact Us",
+    "copyright": "© 2025 Government of India. All rights reserved.",
+    "disclaimer": "This is an official government portal. Unauthorized access is prohibited."
+  },
+  "errors": {
+    "networkError": "Unable to connect to the server. Please check your internet connection.",
+    "serverError": "Server error. Please try again later.",
+    "notFound": "The requested resource was not found.",
+    "unauthorized": "You are not authorized to perform this action.",
+    "validation": "Please check your input and try again."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "collection": {
+      "title": "Information We Collect"
+    },
+    "usage": {
+      "title": "How We Use Your Information"
+    },
+    "protection": {
+      "title": "Data Protection"
+    },
+    "rights": {
+      "title": "Your Rights"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "acceptance": {
+      "title": "Acceptance of Terms"
+    },
+    "eligibility": {
+      "title": "Eligibility"
+    },
+    "usage": {
+      "title": "Acceptable Use"
+    },
+    "responsibilities": {
+      "title": "User Responsibilities"
+    },
+    "government": {
+      "title": "Government Service"
+    },
+    "limitation": {
+      "title": "Limitation of Liability"
+    },
+    "changes": {
+      "title": "Changes to Terms"
+    }
+  },
+  "sitemap": {
+    "title": "Sitemap",
+    "subtitle": "Navigate all pages of our portal"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "backHome": "Go to Home",
+    "checkStatus": "Check Status"
+  },
+  "priority": {
+    "0": "Senior Priority (80+)",
+    "1": "General Queue"
+  },
+  "mode": {
+    "presence": "In-Person",
+    "online": "Online"
+  },
+  "status": {
+    "waiting": "Waiting",
+    "processing": "Processing",
+    "completed": "Completed"
+  }
+}

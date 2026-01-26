@@ -70,8 +70,8 @@ class QueueManager:
             
             response = {
                 'queue_length': len(sorted_entries),
-                'now_serving': queu,
-                'last_updated': self._last_updatede_list[0] if queue_list else None,
+                'now_serving': queue_list[0] if queue_list else None,
+                'last_updated': self._last_updated,
                 'queue': queue_list
             }
             

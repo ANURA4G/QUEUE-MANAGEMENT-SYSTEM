@@ -1,0 +1,12 @@
+export { Home } from './Home';
+export { Booking } from './Booking';
+export { QueueStatus } from './QueueStatus';
+export { CheckStatus } from './CheckStatus';
+export { AdminLogin } from './AdminLogin';
+export { Admin } from './Admin';
+export { About } from './About';
+export { Help } from './Help';
+export { Privacy } from './Privacy';
+export { Terms } from './Terms';
+export { Sitemap } from './Sitemap';
+export { NotFound } from './NotFound';

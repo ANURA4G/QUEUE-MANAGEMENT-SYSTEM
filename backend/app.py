@@ -10,8 +10,11 @@ def create_app(config_name=None):
     app = Flask(__name__)
     app.config.from_object(config.get(config_name, config['default']))
     
-    if app.config.get('CORS_ENABLED'):
-        CORS(app)
+    # Enable CORS for all origins in development
+    CORS(app, origins=["http://localhost:3000", "http://localhost:5173", "http://127.0.0.1:3000", "http://127.0.0.1:5173"], 
+         supports_credentials=True,
+         allow_headers=["Content-Type", "Authorization", "Accept"],
+         methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"])
     
     from routes.queue_routes import queue_bp
     app.register_blueprint(queue_bp)
