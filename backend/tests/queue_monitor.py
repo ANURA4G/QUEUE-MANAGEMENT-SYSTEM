@@ -8,9 +8,10 @@ import requests
 import json
 import time
 import argparse
+import os
 from pathlib import Path
 
-BASE_URL = "http://localhost:5000"
+BASE_URL = os.environ.get('API_BASE_URL', 'http://localhost:5000')
 REQUEST_FILE = Path(__file__).parent / "request.json"
 QUEUE_FILE = Path(__file__).parent / "queue.json"
 

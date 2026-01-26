@@ -6,8 +6,9 @@ Quick test script to verify the Queue API functionality
 import requests
 import json
 import time
+import os
 
-BASE_URL = "http://localhost:5000"
+BASE_URL = os.environ.get('API_BASE_URL', 'http://localhost:5000')
 
 def print_response(title, response):
     print(f"\n{'='*60}")

@@ -8,13 +8,16 @@
   ],
   "routes": [
     {
+      "src": "/health",
+      "dest": "app.py"
+    },
+    {
+      "src": "/queue/(.*)",
+      "dest": "app.py"
+    },
+    {
       "src": "/(.*)",
       "dest": "app.py"
     }
-  ],
-  "env": {
-    "FLASK_ENV": "production",
-    "CORS_ENABLED": "true"
-  },
-  "regions": ["bom1"]
+  ]
 }

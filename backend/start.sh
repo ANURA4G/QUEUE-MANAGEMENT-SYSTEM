@@ -33,21 +33,21 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+# Check for .env file
+if [ ! -f ".env" ]; then
+    echo "📋 Creating .env from .env.example..."
+    cp .env.example .env
+fi
+
 echo ""
 echo "✅ Setup complete!"
 echo ""
 echo "📋 Available Commands:"
 echo "  1. Start API Server:      python app.py"
 echo "  2. Run API Tests:         python tests/test_api.py"
-echo "  3. View Demo Frontend:    Open demo_frontend.html in browser"
-echo ""
-echo "📖 Documentation:"
-echo "  - API Docs:       API.md"
-echo "  - Deployment:     DEPLOYMENT.md"
-echo "  - Overview:       README.md"
 echo ""
 echo "🌐 Starting API Server..."
-echo "   Server will run at: http://localhost:5000"
+echo "   Configure HOST and PORT in .env file"
 echo "   Press Ctrl+C to stop"
 echo ""
 

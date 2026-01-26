@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
-from config import config
+from config import config, Config
 import os
 
 def create_app(config_name=None):
@@ -10,8 +10,9 @@ def create_app(config_name=None):
     app = Flask(__name__)
     app.config.from_object(config.get(config_name, config['default']))
     
-    # Enable CORS for all origins in development
-    CORS(app, origins=["http://localhost:3000", "http://localhost:5173", "http://127.0.0.1:3000", "http://127.0.0.1:5173"], 
+    # Enable CORS with origins from environment configuration
+    cors_origins = Config.get_cors_origins()
+    CORS(app, origins=cors_origins, 
          supports_credentials=True,
          allow_headers=["Content-Type", "Authorization", "Accept"],
          methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"])
