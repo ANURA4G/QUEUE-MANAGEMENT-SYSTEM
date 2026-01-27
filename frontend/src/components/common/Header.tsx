@@ -12,7 +12,7 @@ import {
   FiSettings,
   FiGlobe,
   FiSun,
-  FiMoon
+  FiMoon,
   FiChevronDown
 } from 'react-icons/fi';
 import { ROUTES, NAV_ITEMS } from '../../utils/constants';
