@@ -28,6 +28,59 @@
     min-height: 100vh;
   }
   
+  /* Dark Theme */
+  html.dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+  
+  html.dark .card {
+    @apply bg-gray-800 text-gray-100;
+  }
+  
+  html.dark .bg-white {
+    @apply bg-gray-800;
+  }
+  
+  html.dark .bg-secondary-50 {
+    @apply bg-gray-700;
+  }
+  
+  html.dark .bg-secondary-100 {
+    @apply bg-gray-700;
+  }
+  
+  html.dark .bg-secondary-200 {
+    @apply bg-gray-800;
+  }
+  
+  html.dark .text-text-primary {
+    @apply text-gray-100;
+  }
+  
+  html.dark .text-text-secondary {
+    @apply text-gray-300;
+  }
+  
+  html.dark .border-border {
+    @apply border-gray-600;
+  }
+  
+  html.dark .border-border-light {
+    @apply border-gray-700;
+  }
+  
+  html.dark header {
+    @apply bg-gray-800;
+  }
+  
+  html.dark .bg-primary-500 {
+    @apply bg-primary-600;
+  }
+  
+  html.dark .input {
+    @apply bg-gray-700 text-gray-100 border-gray-600;
+  }
+  
   /* High Contrast Mode */
   html.high-contrast body {
     @apply bg-black text-white;

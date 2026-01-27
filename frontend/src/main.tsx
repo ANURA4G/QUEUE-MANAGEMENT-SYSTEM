@@ -6,6 +6,21 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 import App from './App';
 import './styles/globals.css';
+import { themeStorage, fontSizeStorage } from './utils/storage';
+
+// Initialize theme and font size on app load
+const initializeAppearance = () => {
+  // Apply saved theme
+  const savedTheme = themeStorage.get();
+  document.documentElement.classList.add(savedTheme);
+  
+  // Apply saved font size
+  const savedFontSize = fontSizeStorage.get();
+  document.documentElement.classList.add(`text-${savedFontSize}`);
+};
+
+// Initialize appearance before rendering
+initializeAppearance();
 
 // Initialize i18next
 i18n

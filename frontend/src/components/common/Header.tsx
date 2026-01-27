@@ -10,7 +10,9 @@ import {
   FiUsers, 
   FiSearch,
   FiSettings,
-  FiGlobe
+  FiGlobe,
+  FiSun,
+  FiMoon
 } from 'react-icons/fi';
 import { ROUTES, NAV_ITEMS } from '../../utils/constants';
 import { languageStorage, fontSizeStorage, themeStorage } from '../../utils/storage';
@@ -34,6 +36,12 @@ export const Header: React.FC = () => {
     languageStorage.set(newLang as 'en' | 'hi');
   };
 
+  const toggleTheme = () => {
+    const currentTheme = themeStorage.get();
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    themeStorage.set(newTheme);
+  };
+
   const changeFontSize = (size: 'normal' | 'large' | 'extra-large') => {
     fontSizeStorage.set(size);
     document.documentElement.classList.remove('text-normal', 'text-large', 'text-extra-large');
@@ -53,6 +61,19 @@ export const Header: React.FC = () => {
         <div className="container-custom flex justify-between items-center text-sm">
           <span className="hidden sm:block">{t('app.department')}</span>
           <div className="flex items-center gap-4">
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="flex items-center gap-1 hover:text-accent-500 transition-colors"
+              aria-label={t('accessibility.theme')}
+            >
+              {themeStorage.get() === 'dark' ? (
+                <FiSun className="w-4 h-4" />
+              ) : (
+                <FiMoon className="w-4 h-4" />
+              )}
+            </button>
+
             {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
