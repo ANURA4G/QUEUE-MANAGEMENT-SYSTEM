@@ -104,28 +104,28 @@ export const Header: React.FC = () => {
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
-                    className="absolute right-0 mt-1 bg-white text-gray-800 rounded-md shadow-lg border border-gray-200 overflow-hidden z-50 min-w-[120px]"
+                    className="absolute right-0 mt-1 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-md shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden z-50 min-w-[120px]"
                   >
                     <button
                       onClick={() => changeLanguage('en')}
-                      className={`w-full text-left px-3 py-2 text-xs hover:bg-gray-100 transition-colors ${
-                        i18n.language === 'en' ? 'bg-primary-50 text-primary-600 font-semibold' : ''
+                      className={`w-full text-left px-3 py-2 text-xs hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
+                        i18n.language === 'en' ? 'bg-primary-50 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-semibold' : ''
                       }`}
                     >
                       English
                     </button>
                     <button
                       onClick={() => changeLanguage('hi')}
-                      className={`w-full text-left px-3 py-2 text-xs hover:bg-gray-100 transition-colors ${
-                        i18n.language === 'hi' ? 'bg-primary-50 text-primary-600 font-semibold' : ''
+                      className={`w-full text-left px-3 py-2 text-xs hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
+                        i18n.language === 'hi' ? 'bg-primary-50 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-semibold' : ''
                       }`}
                     >
                       {'\u0939\u093f\u0902\u0926\u0940'}
                     </button>
                     <button
                       onClick={() => changeLanguage('ta')}
-                      className={`w-full text-left px-3 py-2 text-xs hover:bg-gray-100 transition-colors ${
-                        i18n.language === 'ta' ? 'bg-primary-50 text-primary-600 font-semibold' : ''
+                      className={`w-full text-left px-3 py-2 text-xs hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
+                        i18n.language === 'ta' ? 'bg-primary-50 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-semibold' : ''
                       }`}
                     >
                       {'\u0ba4\u0bae\u0bbf\u0bb4\u0bcd'}
