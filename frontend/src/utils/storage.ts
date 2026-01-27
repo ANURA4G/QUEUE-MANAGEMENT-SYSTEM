@@ -128,11 +128,11 @@ export const themeStorage = {
  * Language Storage
  */
 export const languageStorage = {
-  get: (): 'en' | 'hi' => {
-    return storage.get<'en' | 'hi'>(STORAGE_KEYS.language, 'en') || 'en';
+  get: (): 'en' | 'hi' | 'ta' => {
+    return storage.get<'en' | 'hi' | 'ta'>(STORAGE_KEYS.language, 'en') || 'en';
   },
 
-  set: (language: 'en' | 'hi'): void => {
+  set: (language: 'en' | 'hi' | 'ta'): void => {
     storage.set(STORAGE_KEYS.language, language);
   },
 };
