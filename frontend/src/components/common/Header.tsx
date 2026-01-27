@@ -85,15 +85,6 @@ export const Header: React.FC = () => {
               )}
             </button>
 
-            {/* Language Toggle */}
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center gap-1 hover:text-accent-500 transition-colors"
-              aria-label={t('accessibility.language')}
-            >
-              <FiGlobe className="w-4 h-4" />
-              <span>{i18n.language === 'en' ? 'हिंदी' : 'English'}</span>
-            </button>
             {/* Language Dropdown */}
             <div className="relative">
               <button
