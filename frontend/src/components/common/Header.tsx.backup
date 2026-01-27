@@ -114,7 +114,7 @@ export const Header: React.FC = () => {
               </AnimatePresence>
             </div>
             
-            {/* Accessibility Toggle */}
+            {/* Accessibility Toggle */
             <button
               onClick={() => setAccessibilityOpen(!accessibilityOpen)}
               className="flex items-center gap-1 hover:text-accent-500 transition-colors"

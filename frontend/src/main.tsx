@@ -13,7 +13,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    supportedLngs: ['en', 'hi'],
+    supportedLngs: ['en', 'hi', 'ta'],
     fallbackLng: 'en',
     debug: import.meta.env.DEV,
     detection: {
